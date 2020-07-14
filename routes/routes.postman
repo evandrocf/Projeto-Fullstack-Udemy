@@ -1,0 +1,341 @@
+{
+	"info": {
+		"_postman_id": "b162353f-92c0-4229-b299-3e17768fc62d",
+		"name": "fullstack",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"macaddress\": \"11:11:11:11:11:22\",\r\n    \"type\": 1,\r\n    \"title\": \"Criar API\",\r\n    \"description\": \"Criar uma API Para o projeto\",\r\n    \"when\": \"2020-07-13T22:30:00.000\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6500/task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6500",
+					"path": [
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"macaddress\": \"11:11:11:11:11:11\",\r\n    \"type\": 2,\r\n    \"title\": \"Criar API\",\r\n    \"description\": \"API criada com sucessos\",\r\n    \"when\": \"2020-01-15T17:30:00.000\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6500/task/5f0a34b0df0e52205c639f24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6500",
+					"path": [
+						"task",
+						"5f0a34b0df0e52205c639f24"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6500/task/filter/all/11:11:11:11:11:22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6500",
+					"path": [
+						"task",
+						"filter",
+						"all",
+						"11:11:11:11:11:22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6500/task/5f0a34b0df0e52205c639f24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6500",
+					"path": [
+						"task",
+						"5f0a34b0df0e52205c639f24"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6500/task/5f0a21150415a83b0c50b12e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6500",
+					"path": [
+						"task",
+						"5f0a21150415a83b0c50b12e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Done",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6500/task/5f0a34b0df0e52205c639f24/true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6500",
+					"path": [
+						"task",
+						"5f0a34b0df0e52205c639f24",
+						"true"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Late",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6500/task/filter/late/11:11:11:11:11:22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6500",
+					"path": [
+						"task",
+						"filter",
+						"late",
+						"11:11:11:11:11:22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Today",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6500/task/filter/today/11:11:11:11:11:22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6500",
+					"path": [
+						"task",
+						"filter",
+						"today",
+						"11:11:11:11:11:22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Week",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6500/task/filter/week/11:11:11:11:11:22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6500",
+					"path": [
+						"task",
+						"filter",
+						"week",
+						"11:11:11:11:11:22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Month",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6500/task/filter/month/11:11:11:11:11:22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6500",
+					"path": [
+						"task",
+						"filter",
+						"month",
+						"11:11:11:11:11:22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Year",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6500/task/filter/year/11:11:11:11:11:22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6500",
+					"path": [
+						"task",
+						"filter",
+						"year",
+						"11:11:11:11:11:22"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
