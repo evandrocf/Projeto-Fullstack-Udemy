@@ -1,0 +1,38 @@
+- criar o projeto:
+* npm init;
+
+- criar as pastas:
+* src/ config controller model routes;
+
+-criar um index.js:
+* arquivo principal;
+
+- instalar o express:
+* npm install express --save;
+
+- instalar o nodemon:
+* npm install nodemon --D;
+
+- instalr o mongoose:
+* npm install mongoose --save;
+
+- criar dentro do config (importação do bd):
+* database.js;
+
+- na pasta model criar os arquivos models:
+* TaskModel.js;
+
+- na pasta controller criar o arquivo:
+* TaskController.js;
+
+- criar o seguinte arquivo na pasta routes:
+* TaskRoutes.js;
+
+- criar uma pasta middlewares:
+* TaskValidation.js;
+
+- modulo date-fns para trabalhar com data e hrs:
+* npm install date-fns;
+
+- criar um novo arquivo em middlewares de validação:
+* MacAddress.Validation.js;
