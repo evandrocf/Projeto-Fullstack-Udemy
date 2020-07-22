@@ -1,3 +1,5 @@
+=========== API ===========
+
 - criar o projeto:
 * npm init;
 
@@ -36,3 +38,51 @@
 
 - criar um novo arquivo em middlewares de validação:
 * MacAddress.Validation.js;
+
+=========== WEB ===========
+
+- iniciar projeto em React:
+* npx create-react-app web;
+
+- excluir os arquivos que vem por padrão e deixar:
+* public/index.html - src/.gitignore, package.json e package-lock.json, App.js e index.js;
+
+- criar uma nova pasta em src:
+* src/view;
+
+- copiar o contéudo do APP para a página home:
+
+- criar o arquivo .env:
+
+- rodar o projeto:
+* npm start;
+
+- instalar styled-component:
+* npm install --save styled-components;
+
+- criar uma pasta components:
+* criar as pastas de componentes do projeto;
+
+- instalar o axios:
+* npm install --save axios;
+
+- criar uma pasta services (conexão com a api):
+* api.js;
+
+- usar o CORS para dar permissão para a API (no backend/index.js):
+* npm install --save cors;
+
+- instalar o date-fns para a versão web também:
+* npm install --save date-fns;
+
+- criar uma pasta utils:
+* typeIcons.js (arquivo para a coleção dos icones - vetor);
+
+- instalar o react-router (ele pode ser substituido pelo hooker):
+* npm install react-router-dom;
+
+- criar uma pasta em src:
+* routes/index.js;
+
+- intalar qrcode.react:
+* npm install qrcode.react --save;
